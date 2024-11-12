@@ -1,0 +1,13 @@
+<div role="tablist" class="tabs tabs-boxed">
+  @for(page of pages;track page){
+  <div
+    role="tab"
+    [id]="page"
+    class="tab"
+    [class]="pageActive() === page ? 'tab-active' : ''"
+    (click)="goToPage(page)"
+  >
+    {{ page }}
+  </div>
+  }
+</div>

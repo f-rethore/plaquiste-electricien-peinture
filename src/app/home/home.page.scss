@@ -1,0 +1,33 @@
+.welcome-message {
+  position: relative;
+  height: 60vh;
+  padding: 2vh;
+  margin-top: 10vh;
+  h1 {
+    margin-top: 2vh;
+    font-size: 5vh;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+  p {
+    color: #ffffff;
+    font-size: 3vh;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+.welcome-message::after {
+  content: "";
+  background: url("../../assets/img/image-accueil.jpg");
+  background-size: cover;
+  background-position: right 0px bottom 50%;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
