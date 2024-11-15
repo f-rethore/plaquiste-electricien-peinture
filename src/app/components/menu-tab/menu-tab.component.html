@@ -1,39 +1,43 @@
-<div class="navbar bg-base-100">
-  <div class="navbar-start">
-    <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-        <img class="phone" src="burger-menu.svg" alt="menu" />
-      </div>
-      <div
-        tabindex="0"
-        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow burger-menu"
-      >
-        @for(page of pages;track page){
-        <div
-          [class]="pageActive() === page ? 'burger-tab-selected' : 'burger-tab'"
-          (click)="goToPage(page)"
-        >
-          {{
-            page === "home"
-              ? "Accueil"
-              : page === "enSavoirPlus"
-              ? "En savoir plus"
-              : page === "electricite"
-              ? "Electricité"
-              : page.charAt(0).toUpperCase() + page.slice(1)
-          }}
+<header>
+  <div class="navbar bg-base-100">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+          <img class="phone" src="burger-menu.svg" alt="menu" />
         </div>
-        }
+
+        <div
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow burger-menu"
+        >
+          @for(page of pages;track page){
+          <div
+            [class]="
+              pageActive() === page ? 'burger-tab-selected' : 'burger-tab'
+            "
+            (click)="goToPage(page)"
+          >
+            {{
+              page === "home"
+                ? "Accueil"
+                : page === "enSavoirPlus"
+                ? "En savoir plus"
+                : page === "electricite"
+                ? "Electricité"
+                : page.charAt(0).toUpperCase() + page.slice(1)
+            }}
+          </div>
+          }
+        </div>
       </div>
     </div>
+    <div class="navbar-end">
+      <button class="btn btn-ghost btn-circle">
+        <img class="phone" src="call-outline.svg" alt="phone" />
+      </button>
+    </div>
   </div>
-  <div class="navbar-end">
-    <button class="btn btn-ghost btn-circle">
-      <img class="phone" src="call-outline.svg" alt="phone" />
-    </button>
-  </div>
-</div>
-
+</header>
 <div class="tabs tabs-boxed">
   @for(page of pages;track page){
   <div
