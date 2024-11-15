@@ -27,6 +27,17 @@ export const routes: Routes = [
     loadChildren: () =>
       import('./peinture/peinture.module').then((m) => m.PeinturePageModule),
   },
+  {
+    path: 'enSavoirPlus',
+    loadChildren: () =>
+      import('./enSavoirPlus/enSavoirPlus.module').then(
+        (m) => m.EnSavoirPlusPageModule
+      ),
+  },
+  {
+    path: '**',
+    redirectTo: 'home', // Default URL for showcase purposes
+  },
 ];
 
 @NgModule({

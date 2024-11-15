@@ -1,0 +1,7 @@
+User-agent: *
+Disallow:
+Sitemap: https://rethore-plaquiste-electricite-peinture/sitemap.xml
+
+User-agent: *
+Disallow:
+Sitemap: https://rethore-plaquiste-electricite-peinture/sitemap.xml
