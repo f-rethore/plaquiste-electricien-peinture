@@ -1,28 +1,33 @@
-<div class="carousel w-full content-caroussel">
-  @for(image of imagesToShow;track image){
+<div class="peinture-content">
+  <div class="carousel w-full content-caroussel">
+    @for(image of imagesToShow;track image){
 
-  <div
-    id="peinture-{{imagesToShow.indexOf(image)+1}}"
-    class="carousel-item relative w-full"
-  >
-    <img src="peinture-{{imagesToShow.indexOf(image)+1}}.webp" class="w-full" />
     <div
-      class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
+      id="peinture-{{imagesToShow.indexOf(image)+1}}"
+      class="carousel-item relative w-full"
     >
+      <img
+        src="peinture-{{imagesToShow.indexOf(image)+1}}.webp"
+        class="w-full"
+      />
       <div
-        class="btn btn-circle"
-        (click)="goPrevious(imagesToShow.indexOf(image))"
+        class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
       >
-        ❮
-      </div>
-      <div
-        class="btn btn-circle"
-        (click)="goNext(imagesToShow.indexOf(image)+1)"
-      >
-        ❯
+        <div
+          class="btn btn-circle"
+          (click)="goPrevious(imagesToShow.indexOf(image))"
+        >
+          ❮
+        </div>
+        <div
+          class="btn btn-circle"
+          (click)="goNext(imagesToShow.indexOf(image)+1)"
+        >
+          ❯
+        </div>
       </div>
     </div>
+    }
   </div>
-  }
   <div class="badge badge-accent badge-outline">Garantie Décennale</div>
 </div>
