@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class HomePage {
   constructor(private router: Router) {}
 
-  public goToMap() {
-    this.router.navigate(['/app/tabs/map']);
+  public goTo(speciality: string) {
+    this.router.navigate([`/${speciality}`]);
   }
 }

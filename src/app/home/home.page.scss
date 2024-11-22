@@ -35,7 +35,7 @@
 }
 .welcome-message::after {
   content: "";
-  background: url("../../assets/img/image-accueil.jpg");
+  background: url("../../../public/image-accueil.webp");
   background-size: cover;
   background-position: right 0 bottom 50%;
   opacity: 0.5;
@@ -48,4 +48,13 @@
 }
 .hero-content {
   margin-top: 5vh;
+  color: #ffffff;
+  .img-home-category {
+    //width: 50vh;
+    height: 12vw;
+    @media only screen and (max-width: 1690px) {
+      height: auto;
+      width: 50vh;
+    }
+  }
 }

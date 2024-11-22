@@ -20,7 +20,7 @@
 }
 .welcome-message::after {
   content: "";
-  background: url("../../assets/img/image-accueil.jpg");
+  //background: url("../../../public/image-accueil.jpg");
   background-size: cover;
   background-position: right 0px bottom 50%;
   opacity: 0.5;

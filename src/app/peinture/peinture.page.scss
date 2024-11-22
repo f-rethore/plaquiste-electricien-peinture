@@ -1,5 +1,14 @@
-.home-page {
-  height: 100%;
-  padding-right: 5px;
-  padding-left: 5px;
+.content-caroussel {
+  width: 30%;
+  max-height: 500px;
+  margin: 5vh 35% 0 35%;
+  @media only screen and (max-width: 900px) {
+    width: 60%;
+    margin: 2vh 20% 0 20%;
+    max-height: 500px;
+  }
+  .carousel-item {
+    width: 100%;
+    height: auto;
+  }
 }

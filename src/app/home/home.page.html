@@ -11,18 +11,51 @@
   </div>
   <div class="hero bg-base-200">
     <div class="hero-content flex-col lg:flex-row">
-      <img
-        src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-        class="max-w-sm rounded-lg shadow-2xl"
-      />
+      <img src="placo-home.jpg" class="img-home-category" />
       <div>
-        <h1 class="text-3xl font-bold">Box Office News!</h1>
+        <h1 class="text-2xl font-bold">Nos Réalisations en Platrerie</h1>
+        <div class="badge badge-accent badge-outline">Garantie Décennale</div>
         <p class="py-6">
-          Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-          excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a
-          id nisi.
+          Que ce soit en creation de cloisons, de faux plafonds ou en isolation,
+          nous pouvons intervenir sur tout type de projets aussi bien pour des
+          particuliers qu'en milieu industriel.
         </p>
-        <button class="btn btn-primary">Get Started</button>
+        <button class="btn btn-primary" (click)="goTo('platrerie')">
+          Voir plus
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="hero bg-base-200">
+    <div class="hero-content flex-col lg:flex-row-reverse">
+      <img src="elec-home.jpg" class="img-home-category" />
+      <div>
+        <h1 class="text-2xl font-bold">Nos Réalisations en Electricité</h1>
+        <div class="badge badge-accent badge-outline">Garantie Décennale</div>
+        <p class="py-6">
+          Mise en place et cablage d'une installation électrique dans son
+          intégralité et confome aux normes en vigueur.
+        </p>
+        <button class="btn btn-primary" (click)="goTo('electricite')">
+          Voir plus
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="hero bg-base-200">
+    <div class="hero-content flex-col lg:flex-row">
+      <img src="peinture-home.jpg" class="img-home-category" />
+      <div>
+        <h1 class="text-2xl font-bold">Nos Réalisations en Peinture</h1>
+        <div class="badge badge-accent badge-outline">Garantie Décennale</div>
+        <p class="py-6">
+          Nous sommes à l'écoute du client et pouvons même le conseiller sur le
+          choix des couleurs et du type de peinture le mieux adapté à son
+          environnement.
+        </p>
+        <button class="btn btn-primary" (click)="goTo('peinture')">
+          Voir plus
+        </button>
       </div>
     </div>
   </div>
