@@ -7,7 +7,13 @@ import { Router } from '@angular/router';
   styleUrls: ['elec.page.scss'],
 })
 export class ElecPage {
-  public imagesToShow: string[] = ['elec-1', 'elec-2', 'elec-3'];
+  public imagesToShow: string[] = [
+    'elec-1',
+    'elec-2',
+    'elec-3',
+    'elec-4',
+    'elec-5',
+  ];
   public imageIdToDisplay: WritableSignal<number> = signal(1);
   constructor(private router: Router) {}
 

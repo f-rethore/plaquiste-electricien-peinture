@@ -1,0 +1,40 @@
+<div [id]="'main' + indice">
+  <article>
+    <section>
+      <div class="disclosure">
+        <div class="disclosure__img-container">
+          <img
+            [src]="pictureBefore"
+            alt="recent Budapest view"
+            class="disclosure__img"
+          />
+        </div>
+        <div class="disclosure__img-container disclosure__img-container--2">
+          <img
+            style="object-fit: cover"
+            [src]="pictureAfter"
+            alt="post WW2 Budapest view"
+            class="disclosure__img"
+          />
+        </div>
+        <div class="disclosure__widget">
+          <div class="disclosure__line">
+            <div class="disclosure__line-circle">
+              <img src="hand.svg" alt="" class="disclosure__line-circle-img" />
+            </div>
+          </div>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="30"
+            [tabIndex]="indice"
+            class="disclosure__range"
+            [id]="indice"
+            (input)="valueChanged($event)"
+          />
+        </div>
+      </div>
+    </section>
+  </article>
+</div>

@@ -28,12 +28,17 @@ export const routes: Routes = [
       import('./peinture/peinture.module').then((m) => m.PeinturePageModule),
   },
   {
-    path: 'enSavoirPlus',
+    path: 'en-savoir-plus',
     loadChildren: () =>
       import('./enSavoirPlus/enSavoirPlus.module').then(
         (m) => m.EnSavoirPlusPageModule
       ),
   },
+  //composant a creer {
+  //   path: 'contact',
+  //   loadChildren: () =>
+  //     import('./contact/contact.module').then((m) => m.EnSavoirPlusPageModule),
+  // },
   {
     path: '**',
     redirectTo: 'home', // Default URL for showcase purposes

@@ -7,9 +7,16 @@ import { Router } from '@angular/router';
   styleUrls: ['enSAvoirPlus.page.scss'],
 })
 export class EnSavoirPlusPage {
+  public pictures = [
+    {
+      before: 'avant-toilettes-meuble.webp',
+      after: 'apres-toilettes-meuble.webp',
+    },
+    { before: 'douche-avant.webp', after: 'douche-apres.webp' },
+    {
+      before: 'salon-kitchennette-avant.webp',
+      after: 'salon-kitchennette-apres.webp',
+    },
+  ];
   constructor(private router: Router) {}
-
-  public goToMap() {
-    this.router.navigate(['/app/tabs/map']);
-  }
 }

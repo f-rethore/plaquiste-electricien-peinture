@@ -12,7 +12,7 @@ export class MenuTabComponent implements OnInit {
     'platrerie',
     'electricite',
     'peinture',
-    'enSavoirPlus',
+    'en-savoir-plus',
     'contact',
   ];
   public pageActive: WritableSignal<string> = signal('');

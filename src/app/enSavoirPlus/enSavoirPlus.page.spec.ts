@@ -9,7 +9,7 @@ describe('EnSavoirPlusPage', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [EnSavoirPlusPage],
-      imports: [],
+      schemas: [],
     }).compileComponents();
 
     fixture = TestBed.createComponent(EnSavoirPlusPage);
