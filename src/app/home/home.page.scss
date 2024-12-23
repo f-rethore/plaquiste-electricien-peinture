@@ -58,3 +58,20 @@
     }
   }
 }
+.phone-container {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  top: 20px;
+  left: 80%;
+
+  .phone {
+    //margin-right: 2px;
+    padding: 10px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(106, 118, 255);
+    margin-right: 5px;
+  }
+}
