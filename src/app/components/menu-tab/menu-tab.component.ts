@@ -22,7 +22,7 @@ export class MenuTabComponent implements OnInit {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationStart) {
         let categoryToShow = event.url.toString().substring(1);
-        console.log(categoryToShow);
+
         if (this.pages.includes(categoryToShow)) {
           this.pageActive.update((p) => (p = categoryToShow));
         } else {

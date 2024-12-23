@@ -8,4 +8,6 @@ import { SharedModule } from '../shared/shared.module';
   imports: [CommonModule, PlatreriePageRoutingModule, SharedModule],
   declarations: [PlatreriePage],
 })
-export class PlatreriePageModule {}
+export class PlatreriePageModule {
+  constructor() {}
+}

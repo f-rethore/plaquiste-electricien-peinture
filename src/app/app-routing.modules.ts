@@ -18,14 +18,29 @@ export const routes: Routes = [
       import('./platrerie/platrerie.module').then((m) => m.PlatreriePageModule),
   },
   {
+    path: 'platrerie/:image',
+    loadChildren: () =>
+      import('./full-size/full-size.module').then((m) => m.FullSizePageModule),
+  },
+  {
     path: 'electricite',
     loadChildren: () =>
       import('./elec/elec.module').then((m) => m.ElecPageModule),
   },
   {
+    path: 'electricite/:image',
+    loadChildren: () =>
+      import('./full-size/full-size.module').then((m) => m.FullSizePageModule),
+  },
+  {
     path: 'peinture',
     loadChildren: () =>
       import('./peinture/peinture.module').then((m) => m.PeinturePageModule),
+  },
+  {
+    path: 'peinture/:image',
+    loadChildren: () =>
+      import('./full-size/full-size.module').then((m) => m.FullSizePageModule),
   },
   {
     path: 'en-savoir-plus',
@@ -34,11 +49,11 @@ export const routes: Routes = [
         (m) => m.EnSavoirPlusPageModule
       ),
   },
-  //composant a creer {
-  //   path: 'contact',
-  //   loadChildren: () =>
-  //     import('./contact/contact.module').then((m) => m.EnSavoirPlusPageModule),
-  // },
+  {
+    path: 'contact',
+    loadChildren: () =>
+      import('./contact/contact.module').then((m) => m.ContactPageModule),
+  },
   {
     path: '**',
     redirectTo: 'home', // Default URL for showcase purposes

@@ -21,8 +21,6 @@ export class PlatreriePage {
       pictureId = 0;
     }
     const element = document.getElementById('placo-' + (pictureId + 1));
-    console.log(pictureId);
-    console.log('element', element);
     if (element) {
       element.scrollIntoView({
         behavior: 'instant',
@@ -36,8 +34,6 @@ export class PlatreriePage {
       pictureId = this.imagesToShow.length;
     }
     const element = document.getElementById('placo-' + pictureId);
-    console.log(pictureId);
-    console.log('element', element);
     if (element) {
       element.scrollIntoView({
         behavior: 'instant',
@@ -45,5 +41,8 @@ export class PlatreriePage {
         inline: 'center',
       });
     }
+  }
+  public goToPicture(pictureId: number) {
+    this.router.navigate([`/platrerie/placo-${pictureId}`, {}]);
   }
 }

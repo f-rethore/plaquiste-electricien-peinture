@@ -6,7 +6,12 @@
       id="placo-{{imagesToShow.indexOf(image)+1}}"
       class="carousel-item relative w-full"
     >
-      <img src="placo-{{imagesToShow.indexOf(image)+1}}.webp" class="w-full" />
+      <img
+        src="placo-{{imagesToShow.indexOf(image)+1}}.webp"
+        class="w-full"
+        [id]="imagesToShow.indexOf(image)+1"
+        (click)="goToPicture(imagesToShow.indexOf(image)+1)"
+      />
       <div
         class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"
       >

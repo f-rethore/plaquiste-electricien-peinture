@@ -22,8 +22,6 @@ export class ElecPage {
       pictureId = 0;
     }
     const element = document.getElementById('elec-' + (pictureId + 1));
-    console.log(pictureId);
-    console.log('element', element);
     if (element) {
       element.scrollIntoView({
         behavior: 'instant',
@@ -37,8 +35,7 @@ export class ElecPage {
       pictureId = this.imagesToShow.length;
     }
     const element = document.getElementById('elec-' + pictureId);
-    console.log(pictureId);
-    console.log('element', element);
+
     if (element) {
       element.scrollIntoView({
         behavior: 'instant',
@@ -46,5 +43,8 @@ export class ElecPage {
         inline: 'center',
       });
     }
+  }
+  public goToPicture(pictureId: number) {
+    this.router.navigate([`/electricite/elec-${pictureId}`, {}]);
   }
 }

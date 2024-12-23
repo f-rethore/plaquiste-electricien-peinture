@@ -9,6 +9,7 @@
       <img
         src="peinture-{{imagesToShow.indexOf(image)+1}}.webp"
         class="w-full"
+        (click)="goToPicture(imagesToShow.indexOf(image)+1)"
       />
       <div
         class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between"

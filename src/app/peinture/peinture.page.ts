@@ -16,8 +16,7 @@ export class PeinturePage {
       pictureId = 0;
     }
     const element = document.getElementById('peinture-' + (pictureId + 1));
-    console.log(pictureId);
-    console.log('element', element);
+
     if (element) {
       element.scrollIntoView({
         behavior: 'instant',
@@ -31,8 +30,6 @@ export class PeinturePage {
       pictureId = this.imagesToShow.length;
     }
     const element = document.getElementById('peinture-' + pictureId);
-    console.log(pictureId);
-    console.log('element', element);
     if (element) {
       element.scrollIntoView({
         behavior: 'instant',
@@ -40,5 +37,8 @@ export class PeinturePage {
         inline: 'center',
       });
     }
+  }
+  public goToPicture(pictureId: number) {
+    this.router.navigate([`/peinture/peinture-${pictureId}`, {}]);
   }
 }

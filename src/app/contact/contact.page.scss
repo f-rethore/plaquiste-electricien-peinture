@@ -1,0 +1,58 @@
+.contact-container {
+  position: relative;
+  background-color: rgb(200 247 223);
+  .phone-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 10px;
+
+    .phone {
+      margin-right: 2px;
+      padding: 10px;
+      width: 40px;
+      border-radius: 50%;
+      background-color: rgb(125, 148, 184);
+    }
+    .number {
+      color: rgb(125, 148, 184);
+      text-decoration: underline;
+      font-size: 0.8em;
+      font-weight: bold;
+    }
+  }
+  .email-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    left: 10px;
+
+    .email {
+      margin-right: 2px;
+      padding: 11px;
+      width: 40px;
+      border-radius: 50%;
+      background-color: rgb(125, 148, 184);
+    }
+    .address {
+      color: rgb(125, 148, 184);
+      text-decoration: underline;
+      font-size: 0.8em;
+      font-weight: bold;
+    }
+  }
+  iframe {
+    position: relative;
+    margin-top: 120px;
+    left: 0;
+  }
+}
+h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
