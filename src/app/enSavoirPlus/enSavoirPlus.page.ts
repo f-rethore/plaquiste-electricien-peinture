@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-en-savoir-plus',
   templateUrl: 'enSavoirPlus.page.html',
-  styleUrls: ['enSAvoirPlus.page.scss'],
+  styleUrls: ['enSavoirPlus.page.scss'],
 })
 export class EnSavoirPlusPage {
   public pictures = [

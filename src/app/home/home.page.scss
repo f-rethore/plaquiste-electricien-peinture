@@ -61,7 +61,10 @@
 .phone-container {
   color: #ffffff;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 5%;
   width: 100%;
   top: 20px;
   left: 80%;
@@ -71,7 +74,7 @@
     padding: 10px;
     width: 50px;
     border-radius: 50%;
-    background-color: rgb(106, 118, 255);
+    background-color: rgb(116, 128, 255);
     margin-right: 5px;
   }
 }

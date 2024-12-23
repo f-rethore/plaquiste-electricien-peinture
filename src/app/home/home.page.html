@@ -12,14 +12,18 @@
 
   <div class="hero bg-base-200">
     <div class="hero-content flex-col lg:flex-row">
-      <img src="placo-home.jpg" class="img-home-category" />
+      <img
+        src="placo-home.jpg"
+        class="img-home-category"
+        (click)="goTo('platrerie')"
+      />
       <div>
         <h1 class="text-2xl font-bold">Réalisations en Platrerie</h1>
         <div class="badge badge-accent badge-outline">Garantie Décennale</div>
         <p class="py-6">
           Que ce soit en creation de cloisons, de faux plafonds ou en isolation,
-          nous pouvons intervenir sur tout type de projets aussi bien pour des
-          particuliers qu'en milieu industriel.
+          j'interviens sur tout type de projets aussi bien pour des particuliers
+          qu'en milieu industriel.
         </p>
         <button class="btn btn-primary" (click)="goTo('platrerie')">
           Voir plus
@@ -29,7 +33,11 @@
   </div>
   <div class="hero bg-base-200">
     <div class="hero-content flex-col lg:flex-row-reverse">
-      <img src="elec-home.jpg" class="img-home-category" />
+      <img
+        src="elec-home.jpg"
+        class="img-home-category"
+        (click)="goTo('electricite')"
+      />
       <div>
         <h1 class="text-2xl font-bold">Réalisations en Electricité</h1>
         <div class="badge badge-accent badge-outline">Garantie Décennale</div>
@@ -45,12 +53,16 @@
   </div>
   <div class="hero bg-base-200">
     <div class="hero-content flex-col lg:flex-row">
-      <img src="peinture-home.jpg" class="img-home-category" />
+      <img
+        src="peinture-home.jpg"
+        class="img-home-category"
+        (click)="goTo('peinture')"
+      />
       <div>
         <h1 class="text-2xl font-bold">Réalisations en Peinture</h1>
         <div class="badge badge-accent badge-outline">Garantie Décennale</div>
         <p class="py-6">
-          Nous sommes à l'écoute du client et pouvons même le conseiller sur le
+          Toujours à l'écoute du client et je peux même le conseiller sur le
           choix des couleurs et du type de peinture le mieux adapté à son
           environnement.
         </p>
@@ -60,17 +72,14 @@
       </div>
     </div>
   </div>
-  <div class="phone-container hero bg-base-200" (click)="goTo('contact')">
+  <div class="phone-container bg-base-200" (click)="goTo('contact')">
     <button class="btn btn-ghost btn-circle">
       <img class="phone" src="call-outline.svg" alt="phone" />
     </button>
     <p class="py-6">Contact</p>
   </div>
 
-  <div
-    class="hero bg-base-200"
-    style="padding: 5vh 5% 5vh 5%; position: relative"
-  >
+  <div class="hero bg-base-200" style="padding: 5px 5% 5vh 5%">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d154665.6382309845!2d1.3887522879064491!3d44.091404159454875!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ac0cfc64dd8165%3A0x60494a96f9bd253!2s1100%20Chem.%20de%20la%20Pouzaque%2C%2082000%20Montauban!5e0!3m2!1sfr!2sfr!4v1734278599467!5m2!1sfr!2sfr"
       width="100%"
